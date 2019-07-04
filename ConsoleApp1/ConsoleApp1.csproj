@@ -49,12 +49,18 @@
     <Compile Include="Computer.cs" />
     <Compile Include="NPC.cs" />
     <Compile Include="Player.cs" />
-    <Compile Include="PlayerController.cs" />
+    <Compile Include="CharacterController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProtectedInternal_InternalTesting\ProtectedInternal_InternalTesting.csproj">
+      <Project>{fe9223b2-e280-4fc6-b2ac-96147ff15070}</Project>
+      <Name>ProtectedInternal_InternalTesting</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

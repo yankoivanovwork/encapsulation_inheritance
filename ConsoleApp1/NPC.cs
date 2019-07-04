@@ -15,9 +15,9 @@ namespace ConsoleApp1
             name = npcName;
         }
 
-        public void Introduction()
+        public void Information()
         {
-            Console.WriteLine("NPC with name: " + name + ", HP: " + healthPoints + ", Resource: " + resourceType + ", Damage: " + damage);
+            Console.WriteLine("NPC with name: " + name + ", Aerage damage: " + damage);
         }
     }
 }

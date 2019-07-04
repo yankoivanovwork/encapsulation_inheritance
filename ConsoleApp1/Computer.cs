@@ -8,16 +8,18 @@ namespace ConsoleApp1
 {
     public struct Computer
     {
-        public string gpu;
-        public double ram;
-        internal string motherboard;
+        private string nameOfEmployee;
+        private string cpu;
+        private string gpu;
+        private double ram;
+        private string motherboard;
         //protected internal int fanNumber;
         //protected bool rgb;
-        private string cpu;
         private string supply;
 
-        public Computer(string cpuInfo, string gpuInfo, double ramAmount, string motherboardName, string powerSupply)
+        public Computer(string employeeName, string cpuInfo, string gpuInfo, double ramAmount, string motherboardName, string powerSupply)
         {
+            nameOfEmployee = employeeName;
             cpu = cpuInfo;
             gpu = gpuInfo;
             ram = ramAmount;
@@ -27,7 +29,7 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            return "Processor: " + cpu + ", Graphics card: " + gpu + ", Ram amount: " + ram + "GB" + Environment.NewLine + "Motherboard: " + motherboard + ", Power supply: " + supply;
+            return nameOfEmployee + " installed a desctop computer with - Processor: " + cpu + ", Graphics card: " + gpu + ", Ram amount: " + ram + "GB" + Environment.NewLine + "Motherboard: " + motherboard + ", Power supply: " + supply;
         }
     }
 }

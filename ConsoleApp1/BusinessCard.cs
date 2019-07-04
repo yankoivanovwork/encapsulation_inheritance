@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     public struct BusinessCard
     {
-        /*private string name;
+        private string name;
         private string familyName;
         private int age;
 
@@ -35,7 +35,7 @@ namespace ConsoleApp1
                 familyName = value;
             }
         }
-        public string Age
+        public int Age
         {
             get
             {
@@ -45,15 +45,16 @@ namespace ConsoleApp1
             {
                 age = value;
             }
-        }*/
+        }
 
-        public string Name { get; set; }
-        public string FamilyName { get; set; }
-        public int Age { get; set; }
+        private string MyInfo()
+        {
+            return "My name is " + Name + " " + FamilyName + ", " + Age + " years old and I am aprentice programmer.";
+        }
 
         public override string ToString()
         {
-            return "My name is " + Name + " " + FamilyName + " and I am " + Age + " years old.";
+            return "Basic business card information - " + MyInfo();
         }
     }
 }
