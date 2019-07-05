@@ -17,6 +17,8 @@ namespace ConsoleApp1
         //protected bool rgb;
         private string supply;
 
+        //propertyta s vseki modifikator i v drug klas kak rabotqt
+
         public Computer(string employeeName, string cpuInfo, string gpuInfo, double ramAmount, string motherboardName, string powerSupply)
         {
             nameOfEmployee = employeeName;

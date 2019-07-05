@@ -8,7 +8,7 @@ namespace ProtectedInternal_InternalTesting
     {
         public void IntroduceMyself()
         {
-            Console.WriteLine(fourthEmployeeName + " and " + firstEmployeeName + " work together as a team.");
+            Console.WriteLine(FourthEmployeeName + " and " + FirstEmployeeName + " work together as a team.");
         }
     }
 }

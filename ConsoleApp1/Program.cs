@@ -1,4 +1,6 @@
-﻿using System;
+﻿//reference v referenciite i using ...; classa ot drugo assembly e dostapen
+using ProtectedInternal_InternalTesting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
     //inherit ProtectedInternal_InternalTesting.Employee + added reference
-    public class Program : ProtectedInternal_InternalTesting.Employee
+    public class Program : Employee
     {
         static void Main(string[] args)
         {
@@ -33,7 +35,7 @@ namespace ConsoleApp1
 
             //primer3 - using firstEmployeeName from ProtectedInternal_InternalTesting.Employee
             Program employeeName = new Program();
-            Computer computer1 = new Computer(employeeName.firstEmployeeName, "Ryzen 7 2700X", "NVIDIA RTX 2070", 32, "ASUS Prime X470-Pro", "Corsair HX750i 750W Platinum");
+            Computer computer1 = new Computer(employeeName.FirstEmployeeName, "Ryzen 7 2700X", "NVIDIA RTX 2070", 32, "ASUS Prime X470-Pro", "Corsair HX750i 750W Platinum");
             Console.WriteLine(computer1.ToString());
 
             Console.WriteLine("-----------------------------");
